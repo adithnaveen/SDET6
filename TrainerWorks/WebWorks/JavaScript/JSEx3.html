@@ -1,0 +1,24 @@
+<html>
+    <head>
+            <script type="text/javascript">
+                function fnCheckCreditScore(){
+                    name = prompt("Enter Your Name ", "Sunil");
+                    creditScore =prompt("Enter Your CC ", "400");
+
+                    if(creditScore > 400 ){
+                        console.log("You are good to go : " + name);
+                    }else{
+                        console.log("Sorry doesnt meet standards")
+                    }
+
+
+                }
+            </script>
+
+    </head>
+
+    <body>
+        <input type="button" onclick="fnCheckCreditScore()"
+            value="Click Me" />
+    </body>
+</html>

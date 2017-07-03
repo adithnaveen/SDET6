@@ -1,0 +1,23 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FlightPageFactory {
+	private WebDriver driver;
+	
+	public FlightPageFactory(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	@FindBy(id="tab-flight-tab-hp")
+	WebElement flightTab;
+	
+	WebElement flyFrom;
+	
+	WebElement flyTo;
+	
+	
+	
+}

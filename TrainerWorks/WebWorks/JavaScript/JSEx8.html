@@ -1,0 +1,52 @@
+
+<html>
+        <head>
+            <script type="text/javascript">
+            function getElement(){
+                var para = document.getElementsByTagName("script")[0];
+
+                console.log(para);
+
+                console.log(para.nodeName)
+                console.log(para.firstChild.nodeValue)
+
+            }
+
+            function getBGColor(){
+                var bodyTag = document.body;
+                console.log(bodyTag.attributes.length);
+                // this will give attribute which is specified 
+                console.log(bodyTag.getAttribute("bgcolor"));
+
+                // this will give all the attributes associated to 
+                // body tag 
+                for(i=0; i<bodyTag.attributes.length; i++){
+                    console.log(bodyTag.attributes[i].nodeValue)
+                }
+
+
+            }
+            
+
+            function setBGColor(color){
+                document.body.setAttribute("bgcolor", color);
+            }
+
+            </script>
+        </head>
+
+        <body bgcolor="cyan" font='arial'>
+             <p>Hello</p>
+             <input type="button" onclick="getElement()"  value="Click Me" />
+             <input type="button" onclick="getBGColor()" value="Get BGColor" />
+             
+            <input type="button" onmouseover="setBGColor('blue')"
+                value="Blue" />
+            <input type="button" onmouseover="setBGColor('red')"
+                value="RED" />
+            <input type="button" onmouseover="setBGColor('black')"
+                value="BLACK" />
+
+            </script>
+        </body>
+</html>

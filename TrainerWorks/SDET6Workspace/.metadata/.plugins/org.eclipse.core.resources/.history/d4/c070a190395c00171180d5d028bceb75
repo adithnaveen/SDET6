@@ -1,0 +1,13 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class AllFactory {
+	WebDriver driver; 
+	
+	public AllFactory(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, new FlightPageFactory(driver));
+	}
+}

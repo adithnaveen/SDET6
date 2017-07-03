@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            myval1=3333;
+            var val2=44444;
+
+            function fnOne(){
+                val1 =100;
+                // this becomes private 
+                var val2 = 200;
+
+                console.log("Val1 " + val1)
+                console.log("Val2 " + val2)
+
+                
+            }
+
+            function fnTwo(){
+                fnOne();
+                console.log("in Fn2 -> Val1 " + val1)
+                 console.log("in Fn2 -> Val2 " + val2)
+
+               //  console.log(myval2)
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <input type="button" onclick="fnTwo()"
+            value="Click Me" />
+    </body>
+</html>

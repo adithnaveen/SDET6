@@ -1,0 +1,37 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPagePOM {
+
+	public LoginPagePOM(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(how=How.ID, id="uname")
+	WebElement userName;
+	
+	@FindBy(how=How.ID, id="pwd")
+	WebElement password;
+	
+	@FindBy(how=How.ID, id="submitBtn")
+	WebElement loginBtn;
+	
+	public void sendUserName(String userName){
+		this.userName.sendKeys(userName);
+	}
+	
+	public void sendPassword(String password){
+		this.password.sendKeys(password);
+	}
+	
+	public void clickLoginBtn(){
+		this.loginBtn.click();
+	}
+	
+	
+}

@@ -1,0 +1,1 @@
+alert("Hi im from external file... ")

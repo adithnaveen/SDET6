@@ -1,0 +1,16 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class FlightPageFactory {
+	private WebDriver driver;
+	
+	public FlightPageFactory(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	WebElement flightTab;
+	
+	
+}

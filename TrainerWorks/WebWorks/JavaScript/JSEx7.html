@@ -1,0 +1,45 @@
+
+
+<html>
+        <head>
+            <script type="text/javascript">
+
+            // function Array(){
+                // allocat memory 
+
+            //}
+            function fnArray(){
+                arr = new Array(5);   // []
+                
+                arr[0] = "SUN";
+                arr[1] = "MON";
+                arr[2] = "TUE";
+                arr[3] = "WED";
+                arr[4] = "THU";
+            
+                console.log("Number of Elements " + arr.length);
+                console.log("Elements are " + arr);
+
+                arr.push("FRI", "SAT");
+                console.log("Elements are " + arr);
+
+                arr.pop()
+                console.log("Elements are " + arr);
+
+                arr.unshift("HELLO")
+                console.log("Elements are " + arr);
+
+                arr.shift();
+                console.log("Elements are " + arr);
+
+                arr.splice(2, arr.length);
+                console.log("Elements are " + arr);
+            }
+            </script>
+        </head>
+
+        <body>
+            <input type="button" onclick="fnArray()"
+                value="Call Me" />
+        </body>
+</html>

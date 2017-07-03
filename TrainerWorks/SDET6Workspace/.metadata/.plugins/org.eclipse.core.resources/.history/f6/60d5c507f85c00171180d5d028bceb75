@@ -1,0 +1,9 @@
+@Smoke
+Feature: 
+			login feature 
+			
+Scenario: 
+	Given Browser is open  
+	When harry and peter is entered
+	And click on submit 
+	Then Validate the user details 

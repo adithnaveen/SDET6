@@ -1,0 +1,10 @@
+package com.fannie.basic;
+
+public class BasicEx1 {
+	public static void main(String[] args) {
+		// Load the driver 
+		// Open the browser / connection 
+		// do the processing 
+		// close 
+	}
+}

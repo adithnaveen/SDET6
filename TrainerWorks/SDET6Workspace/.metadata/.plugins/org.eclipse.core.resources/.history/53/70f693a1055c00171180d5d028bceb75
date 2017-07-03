@@ -1,0 +1,62 @@
+package com.fannie.generictests;
+
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.fannie.generics.GenericMethods;
+import com.fannie.utils.DriverFactory;
+import com.fannie.utils.DriverNames;
+import com.fannie.utils.ElementType;
+
+public class DatePickerTest {
+
+	WebDriver driver; 
+	String baseURL ;
+	GenericMethods genMethods;
+
+	@Before
+	public void setUp() throws Exception {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+
+		baseURL = "https://www.expedia.com/";
+		genMethods = new GenericMethods(driver);
+		driver.get(baseURL);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		Thread.sleep(3000);
+		// driver.quit();
+	}
+	
+	
+	@Test
+	public void test() throws Exception {
+		// click on flights tab 
+		genMethods.getElement("tab-flight-tab-hp", ElementType.ID).click();
+		
+		// click on departing date 
+		genMethods.getElement("flight-departing-hp-flight", ElementType.ID).click();
+		
+		Thread.sleep(1000);
+		
+		String xpath =".//*[@id='flight-departing-wrapper-hp-flight']/div/div/div[2]/table/tbody/tr/td/button[not(@disabled)]";
+	
+		
+		driver.findElements(By.xpath(xpath));
+	
+	
+	
+	}
+
+}

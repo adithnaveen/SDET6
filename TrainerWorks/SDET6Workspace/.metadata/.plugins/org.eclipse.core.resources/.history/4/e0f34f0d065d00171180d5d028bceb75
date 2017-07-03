@@ -1,0 +1,8 @@
+package com.fannie.step;
+
+public class GenericStep {
+
+	public void userHasToRegister(){
+		System.out.println("%%%%%User has to register%%%%%");
+	}
+}

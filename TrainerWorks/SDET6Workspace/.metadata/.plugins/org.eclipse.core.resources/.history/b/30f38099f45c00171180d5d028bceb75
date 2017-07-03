@@ -1,0 +1,5 @@
+package com.fannie.step;
+
+public class LoginStep {
+
+}

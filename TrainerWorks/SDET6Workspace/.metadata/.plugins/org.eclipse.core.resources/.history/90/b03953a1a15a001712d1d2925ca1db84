@@ -1,0 +1,32 @@
+package com.fannie.basictest;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import com.fannie.utils.DriverFactory;
+import com.fannie.utils.DriverNames;
+
+public class LoginTest {
+
+	String baseUrl;
+	WebDriver driver ; 
+	
+	@Before
+	public void setUp() throws Exception {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		baseUrl="http://naveenks.com/selenium/LoginForm.html";
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+	}
+
+}

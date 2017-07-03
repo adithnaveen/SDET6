@@ -1,0 +1,23 @@
+package com.fannie.testrunner;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = {"features/com/fannie/features"}, 
+		glue = {"com.fannie.step"}, 
+		plugin={"pretty", "html:target/cucumber-html-report"}, 
+		monochrome=true, 
+		tags={"@FirstDryRunTest"}, 
+		snippets=SnippetType.UNDERSCORE
+		)
+// The TestRunner class will act as a place holder 
+// for execution 
+public class TestRunner {}

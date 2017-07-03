@@ -1,0 +1,9 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebElement;
+
+public class FlightPagePOM {
+
+	private static WebElement element;
+	
+}

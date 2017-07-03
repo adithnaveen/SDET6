@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function fnDisplay(){
+                console.log("Function called without param");
+                // all function in JS accept parameters as associative 
+                // arrays 
+
+                console.log(fnDisplay.arguments.length);
+
+
+                varCount = fnDisplay.arguments.length;
+                for(i=0; i<varCount;i++){
+                    console.log(fnDisplay.arguments[i])
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            fnDisplay(101, "harry", "testing", 22332, 3234, 444);
+        </script>
+
+        <input type="button" onclick="fnDisplay()" value="Click Me"/>
+    </body>
+
+</html>

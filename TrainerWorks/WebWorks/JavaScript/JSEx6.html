@@ -1,0 +1,70 @@
+<html>
+        <head>
+            <script type="text/javascript">
+                function fnTestObject(){
+                    obj = new Object;
+                    obj.val1 = 100;
+                    obj.val2 = 200; 
+
+                    console.log(obj.val1);
+                    console.log(obj.val2);
+                    // console.log(obj.val3);
+
+                }
+
+                function Employee(id, name,sal){
+                    this.empId = id; 
+                    this.empName =name;
+                    this.salary = sal;
+
+
+
+                    var fnPrivateCode =function(){
+                        console.log("hey im private code ");
+                    }
+
+                    var fnPrivateCode2 = function(){// todo 
+                    }
+
+                    // privilleged code 
+                    this.giveMeAccess = function(){
+                        // TODO 
+                        fnPrivateCode();
+                    }
+                
+                this.giveMeAccess1 = function(){
+                        // TODO 
+                        fnPrivateCode();
+                    }
+                
+                }
+
+                // public 
+                Employee.prototype.display = function(){
+                    // even this is not accessible 
+                   // fnPrivateCode()
+                    console.log("Emp Id " + this.empId)
+                    console.log("Emp Name " + this.empName)
+                    console.log("Emp Sal " + this.salary)
+
+                }
+              
+
+
+
+              
+            </script>
+        </head>
+
+        <body>
+            <script type="text/javascript">
+               //  fnTestObject();
+               emp = new Employee(101, "Manasa", 1000);
+               emp.display();
+               emp.giveMeAccess();
+               // private functions are not accessible 
+             //   emp.fnPrivateCode()
+            </script>
+
+        </body>
+</html>

@@ -1,0 +1,11 @@
+package com.fannie.step;
+
+import cucumber.api.java.Before;
+
+public class GenericStep {
+
+	@Before
+	public void userHasToRegister(){
+		System.out.println("%%%%%User has to register%%%%%");
+	}
+}

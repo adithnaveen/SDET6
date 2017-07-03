@@ -1,0 +1,9 @@
+package com.fannie.pom;
+
+import org.openqa.selenium.WebDriver;
+
+public class FlightPageFactory {
+	private WebDriver driver;
+	
+	
+}

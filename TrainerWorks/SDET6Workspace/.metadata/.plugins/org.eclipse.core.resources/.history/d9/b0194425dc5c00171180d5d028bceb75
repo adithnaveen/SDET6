@@ -1,0 +1,7 @@
+package com.fannie.step;
+
+public class LoanSanctionStep {
+	
+	
+	public void method1(){}
+}

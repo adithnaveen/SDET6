@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function fnBasic(){
+               S="abc";
+                I=123;
+                console.log(S+I); 
+                B=true;
+                console.log(S+B); 
+                console.log(B+1); 
+                console.log(5+154e-2 +" kgs");
+                console.log("Rs." +5+154e-2 );
+                console.log("34"==34);
+                console.log(1<".23");
+                console.log(10*"55");
+
+
+
+console.log(10/"abc");
+console.log(1==true); 
+console.log(1=="true");
+console.log(5/0); 
+console.log(true & "3");
+console.log(true & "a");
+console.log(10/"abc"==NaN); 
+
+        if(isNaN(10/"abc")){
+                console.log("im in true of NaN")
+        }else {
+                console.log("im in false of nan")
+            }
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="button" value="Click Me"
+            onclick="javascript:fnBasic()" />
+        <input type="button" value="Another click" 
+            onclick="alert('hi im from inline')" />
+    </body>
+</html>

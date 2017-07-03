@@ -1,0 +1,25 @@
+<html>
+        <head>
+            <script type="text/javascript">
+            function fnDomManip(){
+                var ePara = document.getElementsByTagName("p")[0];
+                var boldElement = document.createElement("b");
+                var textElement = document.createTextNode("Hello There");
+
+                boldElement.appendChild(textElement);
+
+               //  document.body.appendChild(boldElement);
+
+               document.body.insertBefore(boldElement,ePara);
+
+            }
+            </script>
+        </head>
+
+        <body>
+            <p>JAVASCRIPT WORKS</p>
+
+            <input type="button" onclick="fnDomManip()"
+                value="Dom Manipulation" />
+        </body>
+</html>

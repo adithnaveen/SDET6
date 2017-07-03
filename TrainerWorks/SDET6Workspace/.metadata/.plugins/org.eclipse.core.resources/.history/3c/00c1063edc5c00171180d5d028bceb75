@@ -1,0 +1,11 @@
+package com.fannie.step;
+
+import cucumber.api.java.en.Given;
+
+public class LoanSanctionStep {
+	
+	@Given("the customer works full time")
+	public void method1(){
+		System.out.println("the customer works full time>>>>>");
+	}
+}

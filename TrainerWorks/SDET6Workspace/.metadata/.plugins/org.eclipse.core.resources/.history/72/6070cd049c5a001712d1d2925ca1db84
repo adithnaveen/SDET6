@@ -1,0 +1,10 @@
+package com.fannie.utils;
+
+public interface Driver {
+	String CHROME ="";
+	String FIREFOX="";
+	
+	
+	String CHROME_PATH="";
+	String FIREFOX_PATH="";
+}

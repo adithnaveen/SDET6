@@ -1,0 +1,13 @@
+@Smoke
+Feature: 
+			login feature 
+			
+Scenario: 
+	Given Browser is open  
+	When user name and password is entered
+	|		username		|		password		|
+	|		harry						| 	peter					|
+	|		ben							|  testing				|
+	|		gayathri				|		hello					|
+	And click on submit 
+	Then Validate the user details 

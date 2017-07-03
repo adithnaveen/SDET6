@@ -1,0 +1,29 @@
+package com.fannie.utils;
+
+import org.openqa.selenium.WebDriver;
+
+public class DriverFactory {
+
+	static WebDriver driver; 
+
+	public static WebDriver getDriver(String driverName){
+		if(driverName.equals("CHROME")){
+			// TODO 
+
+			System.setProperty("webdriver.chrome.driver", 
+					"C:\\software\\SeleniumDriver\\chromedriver.exe");
+			 driver = new ChromeDriver();
+			
+			
+		} else if(driverName.equals("FIREFOX")){
+			// TODO return IE
+		} else if(driverName.equals("IE")){
+			
+		}
+		
+		return null;
+	}
+	
+	
+}
+
